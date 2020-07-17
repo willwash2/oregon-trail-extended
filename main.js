@@ -21,6 +21,7 @@ class Traveler {
 }
 
 
+
 class Wagon {
     constructor(capacity) {
         this.capacity = capacity
@@ -42,10 +43,10 @@ class Wagon {
         for (let index = 0; index < this.passengers.length; index++) {
             if (this.passengers[index].isHealthy === false) {
                 return true
-            }
-        }
-    }
 
+            }
+        } return false
+    }
     totalFood() {
         let totalNumber = 0
         for (let index = 0; index < this.passengers.length; index++) {
