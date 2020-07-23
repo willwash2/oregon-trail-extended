@@ -2,7 +2,7 @@ class Traveler {
     constructor(name) {
         this.name = name
         this.food = 1
-        this.isHealthy = (true)
+        this.isHealthy = true
     }
     hunt() {
         this.food += 2
@@ -14,7 +14,7 @@ class Traveler {
 
         }
         else {
-            this.isHealthy = (false)
+            this.isHealthy = false
         }
 
     }
@@ -46,7 +46,7 @@ class Hunter extends Traveler {
 
         }
         else {
-            this.isHealthy = (false)
+            this.isHealthy = false
             this.food = 0
         }
     }
@@ -54,7 +54,7 @@ class Hunter extends Traveler {
 
         if (this.food >= numberOfFoodUnits) {
             this.food -= numberOfFoodUnits
-        }
+        } traveler.food += numberOfFoodUnits
 
     }
 }
